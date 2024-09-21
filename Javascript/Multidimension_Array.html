@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [
+        ["john", 30], //0
+        ["Thomas", 28], //1
+        ["Robert", 22],
+      ]; //2
+      console.log(arr);
+      console.log(arr[1]);
+      console.log(arr[1][0]);
+      console.log("------------------->Simple For loop");
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+          console.log(arr[i][j]);
+        }
+      }
+      console.log("------------------->For Each Nested loop");
+      arr.forEach((data) => {
+        data.forEach((val) => {
+          console.log(val);
+        });
+      });
+      console.log("------------------->For For Of Nested loop");
+      for(ar of arr){
+        for(i of ar){
+            console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>

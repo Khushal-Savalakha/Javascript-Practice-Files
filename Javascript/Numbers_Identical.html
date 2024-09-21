@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function identical(array) {
+        var first = array[0];
+        for (var i = 1; i < array.length; i++) {
+          if (array[i] != first) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      document.write(identical([10, 10, 10, 10])+'<br>'); // true
+      document.write(identical([10, 20, 30, 40])+'<br>'); // false
+      document.write(identical([20, 20, 20, 20])+'<br>'); // true
+    </script>
+  </body>
+</html>
+n

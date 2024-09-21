@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function daysdiff(date1,date2){
+            one_day=24*60*60*1000;
+            date1_ms=date1.getTime();
+            date2_ms=date2.getTime();
+            diff=Math.abs(date1_ms-date2_ms);
+            return Math.round(diff/one_day);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var d1=new Date();
+        document.write(d1+"<br>");
+        d1.setMonth(8);
+        d1.setDate(17);
+        document.write(d1+"<br>");
+        var d2=new Date();
+        document.write(d2+"<br>");
+        document.write("<h1> No of days left="+daysdiff(d1,d2));
+    </script>
+</body>
+</html>

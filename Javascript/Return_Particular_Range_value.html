@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = [10, 20, 35,10, 19, 25, 60];
+      let a = num.filter((val, ind, arr) => {
+        if (val >= 10 && val <= 25) {
+          return val;
+        }
+      });
+
+      let b = num.find((val, ind, arr) => {
+        if (val==10) {
+          return val;
+        }
+      });
+
+      let c = num.findLastIndex((val, ind, arr) => {
+        return val==10;
+      });
+
+      console.log(a);
+      console.log(b);
+      console.log(c);
+    </script>
+  </body>
+</html>

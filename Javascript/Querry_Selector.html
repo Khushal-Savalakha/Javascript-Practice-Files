@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showTime(){
+            var headline=document.querySelector('#tagline');
+            headline.style.color='red';
+            // var items=document.querySelector('.list-item');
+            // items.style.color='red';
+            // var items=document.querySelectorAll('.list-item');
+            var items=document.querySelectorAll('li');
+            for(let i=0;i<items.length;i++){
+                items[i].style.color='red';
+            }
+
+            var input=document.querySelector('input');
+            input.value='Enter Your Name';
+
+            var button=document.querySelector('input[type="submit"]');
+            button.style.backgroundColor='red';
+            button.style.color='yellow';
+            button.value='SEND';
+        }
+    </script>
+</head>
+<body>
+    <header id="header" style="background-color: green;">
+        <h2 id="header-title">Husain</h2>
+        <p id="tagline">Computer Educator </p>
+    </header>
+    <div id="content">
+        <h4 style="border-bottom:2px solid green;display:inline;">Courses</h4>
+    </div>
+    <ul id="list-item">
+        <li class="list-item">Graphics</li>
+        <li class="list-item">Web</li>
+        <li class="list-item">Video</li>
+        <li class="list-item">3D</li>
+    </ul>
+    <form>
+        <input type="text">
+        <input type="submit">
+    </form>
+    <script>
+        showTime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showTime() {
+        // var headline=document.querySelector('#tagline');
+        // headline.style.color='red';
+
+        /*  var odd = document.querySelectorAll("li:nth-child(odd)");
+        for (let i = 0; i < odd.length; i++) {
+          odd[i].style.color = "red";
+        }*/
+
+        var odd = document.querySelectorAll("li:nth-child(odd)");
+        for (let i = 0; i < odd.length; i++) {
+          odd[i].style.color = "red";
+          console.log(i * 2 + 1); // This will print the odd numbers
+        }
+        
+        var even = document.querySelectorAll("li:nth-child(even)");
+        for (let i = 0; i < odd.length; i++) {
+          even[i].style.color = "blue";
+        
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <header id="header" style="background-color: green">
+      <h2 id="header-title">Husain</h2>
+      <p id="tagline">Computer Educator</p>
+    </header>
+    <div id="content">
+      <h4 style="border-bottom: 2px solid green; display: inline">Courses</h4>
+    </div>
+    <ul id="list-item">
+      <li class="list-item">Graphics</li>
+      <li class="list-item">Web</li>
+      <li class="list-item">Video</li>
+      <li class="list-item">3D</li>
+      <li class="list-item">Motion Graphic</li>
+      <li class="list-item">Digital Marketing</li>
+      <li class="list-item">2D Animation</li>
+    </ul>
+    <form>
+      <input type="text" />
+      <input type="submit" />
+    </form>
+    <script>
+      showTime();
+    </script>
+  </body>
+</html>

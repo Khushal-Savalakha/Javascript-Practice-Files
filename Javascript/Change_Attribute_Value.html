@@ -1,0 +1,19 @@
+<!-- 1. Changing the attribute value of an HTML element using element.attribute = new value: -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <script>
+      var p = document.getElementById("myParagraph");
+      p.id = "newId";
+      document.write(p.id); // Output: newId
+    </script>
+  </body>
+</html>
+<!-- In this example, we're changing the id attribute of the paragraph element with the id
+     "myParagraph" to "newId" using element.attribute = new value. -->

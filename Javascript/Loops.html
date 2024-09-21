@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = [10, 20, 30, 40, 50];
+      // array.forEach(function(currentValue, index, arr), thisValue)
+      num.forEach((val, index, array) => {
+        console.log(val + " " + index + " " + num);
+      });
+
+      let numbers = [1, 2, 3, 4, 5];
+      let sum = 0;
+
+      numbers.forEach(function (number) {
+        sum += number;
+      }, this);
+
+      console.log(sum); // Output: 15
+      // document.write(sum);
+
+      let str='10,20,30';
+      let arr=str.split(',');
+      arr.forEach(element=>{
+        document.write(element+"<br>");
+      })
+
+      document.write(arr+"<br>");
+      let jo=arr.join("and");
+      document.write(jo);
+    </script>
+  </body>
+</html>

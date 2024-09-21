@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // Using var
+      function exampleVar() {
+        if (true) {
+          var x = 10;
+          var x=90;
+        }
+        console.log('X:'+x); // Output: 10
+      }
+      
+
+      // Using let
+      function exampleLet() {
+        if (true) {
+            let y=8;
+          let y = 20;
+        }
+        console.log(y); // ReferenceError: y is not defined
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      // let a=10;
+      // let a=90;
+      // Uncaught SyntaxError: Identifier 'a' has already been declared
+      let a = 10;
+
+      console.log(a);
+      document.write(a);
+      exampleVar();
+      exampleLet();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var movie = {
+        name: "Bahubali",
+        year: 2016,
+        hero: "prabhas",
+      };
+      document.write(typeof movie);
+      document.write("<br>");
+      document.write(typeof movie[name]);
+      document.write("<br>");
+      document.write(typeof movie["name"]);
+      document.write("<br>");
+
+      var myobject = {
+        movie: "Hello",
+        name: "Bahubali",
+        m1: function () {
+          document.write("-->Object Method" + "<br>");
+        },
+      };
+      myobject.m1();
+      // this keyword:
+      var movie = {
+        name: "Bahubali",
+        year: 2016,
+        hero: "prabhas",
+        getInfo: function () {
+          document.write("Movie Name: " + this.name + "<br>");
+          document.write("Released Year: " + this.year + "<br>");
+          document.write("Hero Name: " + this.hero + "<br>");
+        },
+      };
+
+      movie.getInfo();
+
+      // demo function
+      function demo() {
+        document.write("Demo Function" + "<br>");
+      }
+
+      var movie = {
+        name: "Bahubali",
+        year: 2016,
+        hero: "Prabhas",
+        getInfo: demo,
+      };
+
+      movie.getInfo();
+      document.write(typeof demo);
+    </script>
+  </body>
+</html>

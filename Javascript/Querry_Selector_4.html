@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>querySelector Examples</title>
+<style>
+    .red {
+        color: red;
+    }
+
+    #green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div id="exampleDiv" class="exampleClass red" data-example="value">Example Div</div>
+    <p id="paragraph">Example Paragraph</p>
+    <span>Example Span</span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecting the first div within the container
+    var firstDiv = document.querySelector('.container div');
+    console.log('First div within the container:', firstDiv);
+
+    // Selecting an element with the id "exampleDiv"
+    var elementWithId = document.querySelector('#exampleDiv');
+    console.log('Element with ID "exampleDiv":', elementWithId);
+
+    // Selecting elements with the class name "red"
+    var redElements = document.querySelector('.red');
+    console.log('Elements with class "red":', redElements);
+
+    // Selecting the paragraph with the id "paragraph"
+    var paragraph = document.querySelector('p#paragraph');
+    console.log('Paragraph with ID "paragraph":', paragraph);
+
+    // Selecting elements with the attribute "data-example" having the value "value"
+    var elementsWithAttribute = document.querySelector('[data-example=value]');
+    console.log('Elements with Attribute "data-example" with value "value":', elementsWithAttribute);
+
+    // Selecting the first element with the class "blue" within the container
+    var blueElement = document.querySelector('.container .blue');
+    console.log('First element with class "blue" within the container:', blueElement);
+});
+</script>
+
+</body>
+</html>

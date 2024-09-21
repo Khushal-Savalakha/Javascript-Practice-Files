@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let obj = {
+        name: "Bravo",
+        age: 21,
+        "last name": "John",
+        fun: function () {
+          console.log("I am Function.");
+          return "Function executed successfully.";
+        },
+        arr: [20, 30, 40],
+      };
+
+      console.log(obj.name);
+      console.log(obj.age);
+      console.log(obj["name"]);
+      console.log(obj["age"]);
+      console.log(obj["last name"]);
+      console.log(obj.fun());
+      // console.log(obj["fun"]);This line gives error
+      //   console.log(obj.fun.call(obj));
+      obj.fun();
+      console.log(obj.arr);
+      console.log(obj);
+      console.log(obj.fun);
+      //obj.a="item1";it gives error
+      obj.key = "item1";
+      console.log(obj.key);
+      obj.key = "item2";
+      console.log(obj);
+      let a = "Khushal";
+      obj[a] = "item4";
+      console.log(obj);
+      console.log("--------------");
+      for (let i in obj) {
+        // console.log(typeof i); It's type is string
+        console.log(i + ":" + obj[i]);
+      }
+      console.log("--------------");
+      for (let i of Object.keys(obj)) {
+        console.log(i + ":" + obj[i]);
+      }
+      for (let [key, value] of Object.entries(obj)) {
+        document.write(key + ":" + value+"<br>");
+        console.log(key + ":" + value);
+      }
+    </script>
+  </body>
+</html>

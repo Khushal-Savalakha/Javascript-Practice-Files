@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Annonymus Function
+      let fun = function () {
+        console.log("Hello world by let variable.");
+      };
+      console.log("--> This is anonymus Function.");
+      fun();
+
+      // IF We have to make anonymus function which can self invoke.
+      (function () {
+        console.log("Hello world by Self Invoking.");
+      })();
+
+      //Arrow Function
+      //---> Syntax: (parameters) => { statement }
+      console.log("-->Arrow Function");
+      // Example:
+      let greet = () => {
+        console.log("Greet! by Arrow function.");
+      };
+
+      //Arrow Function
+      let a = (a, b) => {
+        return a + b;
+      };
+      //Arrow Function
+      let Data = (a, b) => console.log(a + b + " By arrow functin.");
+      Data("Khushal", "Savalakaha");
+      console.log(greet());
+    </script>
+  </body>
+</html>

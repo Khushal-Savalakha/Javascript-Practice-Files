@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //-->Array
+      console.log("-->Array");
+      let name = ["John", 1, true, null, undefined];
+      console.log(name);
+      console.log("Array:" + name);
+      console.log(name.length);
+      console.log(name[0]);
+      name.push("Cena");
+      console.log("Array:" + name);
+      name.unshift("Khushal");
+      console.log("Array:" + name);
+      name.splice(1, 2); //Starts from first index and delete 1 data.
+      console.log("Array:" + name);
+      name.splice(1, 0, "SKJ");
+      // This will insert the string "SKJ" at index 1 in the `name` array.
+     //  The `0` as the second argument means that no elements will be removed.
+      console.log("-->Array:" + name);
+    </script>
+  </body>
+</html>
+<!-- The triple commas after `true` in the line `Array:Khushal,true,,,Cena` are not
+actually printed. They are placeholders for `null` and `undefined` in the array.
+In JavaScript, when you print an array that contains `null` or `undefined`
+elements, they are represented as `null` or `undefined` respectively. However,
+when you print the array as a string, `null` and `undefined` are represented as
+empty strings. So, the array `["Khushal", true, null, undefined, "Cena"]` is
+printed as `Array:Khushal,true,,,Cena` because `null` and `undefined` are
+represented as empty strings in the string representation of the array. -->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      arr1 = ["john", 202, true];
+      arr2 = arr1;
+      arr1.push("Berg");
+      console.log(arr1);
+      console.log(arr2);
+      console.log("----------->");
+      arr3 = ["skj", 768, true];
+      arr4 = arr3.slice(0);
+      arr3.push("Savalakha");
+      console.log(arr3);
+      console.log(arr4);
+      console.log("----------->Spread Operator");
+      //Spread Operator.
+      arr4 = ["skj", 768, true];
+      arr5 = [...arr4];
+      arr4.push("Savalakha");
+      console.log(arr4);
+      console.log(arr5);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [
+        { user: 1, name: "tate" },
+        { user: 2, name: "tate2" },
+        { user: 3, name: "tate3" },
+      ];
+      console.log(arr);
+      console.log(arr[0]);
+      console.log("--------");
+      let [item1, item2] = arr;
+      console.log(item1);
+      console.log(item2);
+      console.log("--------");
+      let [{ name }, item3, { name: name1 }] = arr;
+      console.log(name);
+      console.log(item2);
+      console.log(name1);
+      console.log("--------");
+      console.log(arr);
+      console.log("--------");
+      let [{ name: name2 }, , { name: name3 }] = arr;
+      console.log(name2);
+      console.log(name3);
+    </script>
+  </body>
+</html>
